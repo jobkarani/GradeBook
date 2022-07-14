@@ -12,6 +12,7 @@ namespace GradeBook{
         static void Main(string [] args){
 
             var book = new Book();
+            book.AddGrade(36.69);
 
 
 // sum 
