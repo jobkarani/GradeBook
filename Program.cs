@@ -2,6 +2,7 @@
 // Console.WriteLine("Hello, World!");
 
 using System;
+using System.Collections.Generic;
 
 namespace GradeBook{
 
@@ -26,21 +27,29 @@ namespace GradeBook{
             // numbers[2] = 6.23;
 
 // Array init 
-           var numbers = new [] {1.23, 2.00, 6.23}; 
+        //    var numbers = new [] {1.23, 2.00, 6.23}; 
+           
+
+// List init 
+            var grades = new List<double>() {1.23, 2.00, 6.23};
+            grades.Add(6.9);
+
 
         //    var results = numbers[0];
         //    results += numbers[1];
         //    results += numbers[2];
 
             var results = 0.0;
-            
-            foreach(double number in numbers){
+
+            foreach(double number in grades){
 
                 results += number;
 
             }
 
-            Console.WriteLine(results);
+            results /= grades.Count;
+
+            Console.WriteLine($"The average grade is {results}");
             
             if(args.Length > 0){
 
