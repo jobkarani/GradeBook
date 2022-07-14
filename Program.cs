@@ -6,9 +6,12 @@ using System.Collections.Generic;
 
 namespace GradeBook{
 
+   
     class Program{
         
         static void Main(string [] args){
+
+            var book = new Book();
 
 
 // sum 
@@ -50,14 +53,6 @@ namespace GradeBook{
             results /= grades.Count;
 
             Console.WriteLine($"The average grade is {results}");
-            
-            if(args.Length > 0){
-
-                Console.WriteLine($"Hello, {args[0]} !");
-            }
-            else{
-                Console.WriteLine("Hello");
-            }
         }
     }
 }                                                                                          
