@@ -11,8 +11,8 @@ namespace GradeBook{
             grades.Add(grade);
         }
 
-        List<double> grades;
-        public string name;
+        private List<double> grades;
+        private string name;
     }
 }
 

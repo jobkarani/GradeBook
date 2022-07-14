@@ -44,15 +44,24 @@ namespace GradeBook{
         //    results += numbers[2];
 
             var results = 0.0;
+            var highGrade = double.MinValue;
+            var lowGrade = double.MaxValue;
 
             foreach(double number in grades){
 
+                // if (number > highGrade){
+                //     highGrade = number;
+                // }
+                highGrade = Math.Max(number, highGrade);
+                lowGrade = Math.Min(number, lowGrade);
                 results += number;
 
             }
 
             results /= grades.Count;
 
+            Console.WriteLine($"The highest grade is {highGrade:N1}");
+            Console.WriteLine($"The lowest grade is {lowGrade:N1}");
             Console.WriteLine($"The average grade is {results:N1}");
         }
     }
