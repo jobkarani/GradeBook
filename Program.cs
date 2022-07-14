@@ -11,7 +11,7 @@ namespace GradeBook{
         
         static void Main(string [] args){
 
-            var book = new Book();
+            var book = new Book("Jobs Grade Book :) ");
             book.AddGrade(36.69);
 
 
